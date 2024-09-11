@@ -1,9 +1,9 @@
 #include <stdint.h>
 #include <stdbool.h>
 
-#include "wolfssl/openssl/conf.h"
-#include "wolfssl/openssl/evp.h"
-#include "wolfssl/openssl/err.h"
+#include "openssl/conf.h"
+#include "openssl/evp.h"
+#include "openssl/err.h"
 
 #include "openssl_caller.h"
 

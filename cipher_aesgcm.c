@@ -413,7 +413,7 @@ void aesgcm_cipher(TARGET target, struct binary_memory_stream *stream)
 				state = CIPHER_STATE_WAITING_CONFIG;
 
 				if (acvts_flag && device_flag) {
-					dump_crypto_packet_to_memory();
+					// dump_crypto_packet_to_memory();
 				}
 			}
 			break;
@@ -429,8 +429,8 @@ void aesgcm_cipher(TARGET target, struct binary_memory_stream *stream)
 				state		  = CIPHER_STATE_WAITING_TEST_CASE;
 
 				if (acvts_flag && device_flag) {
-					dump_config_packet_to_memory(test_case.direction, test_case.tg_id,
-												 test_case.text_len, test_case.tag_len);
+					// dump_config_packet_to_memory(test_case.direction, test_case.tg_id,
+					//							 test_case.text_len, test_case.tag_len);
 				}
 			}
 			break;
@@ -447,8 +447,8 @@ void aesgcm_cipher(TARGET target, struct binary_memory_stream *stream)
 				state		  = CIPHER_STATE_WAITING_TEST_CASE;
 
 				if (acvts_flag && device_flag) {
-					dump_config_packet_to_memory(test_case.direction, test_case.tg_id,
-												 test_case.text_len, test_case.tag_len);
+					// dump_config_packet_to_memory(test_case.direction, test_case.tg_id,
+					//							 test_case.text_len, test_case.tag_len);
 				}
 			} else if (pkt_type == TEST_CASE_PACKET) {
 				DEBUG(2, "Parsing test case packet\n");
