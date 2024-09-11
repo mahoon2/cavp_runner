@@ -34,7 +34,7 @@ Now you have `libwolfssl.a` under `src/.libs/` directory. Simply copy it to `ket
 
 `cp src/.libs/libwolfssl.a ketu-firmware/tools/cavp_testing/libs`
 
-Please note that this command is for building static library for AES-GCM. If you want to use other crypto algorithms, you should re-configure.
+Please note that this command is for building static library for AES-GCM. If you want to use other crypto algorithms, you should re-configure without `DWOLFSSL_AEAD_ONLY`.
 
 ## How to build wolfssl library archive for K2(RISC-V cross compile)
 
