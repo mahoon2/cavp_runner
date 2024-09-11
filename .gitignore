@@ -50,4 +50,8 @@ Module.symvers
 Mkfile.old
 dkms.conf
 
+*.bin
+
 .vscode
+cavp_testing
+__pycache__
